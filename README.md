@@ -11,6 +11,7 @@ _Example 1:_
 `
 Input: nums = [2,2,1]
 `
+
 `
 Output: 1
 `
@@ -21,26 +22,29 @@ _Example 2:_
 `
 Input: nums = [4,1,2,1,2]
 `
+
 `
 Output: 4
 `
 
 
 _Example 3:_
+
 `
 Input: nums = [1]
 `
+
 `
 Output: 1
 `
  
 
 _Constraints:_
-*
+
 `
 1 <= nums.length <= 3 * 10^4
 `
-*
+
 `
 -3 * 104 <= nums[i] <= 3 * 10^4
 `
