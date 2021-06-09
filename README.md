@@ -50,3 +50,18 @@ _Constraints:_
 `
 
 Each element in the array appears twice except for one element which appears only once.
+
+# Java solution
+
+```
+public int singleNumber(int[] nums) {
+        Map<Integer, Integer> map = new HashMap<>();
+
+        for (int i = 0; i < nums.length; i++) {
+            if (map.containsKey(nums[i])) map.remove(nums[i]);
+            else map.put(nums[i], 1);
+        }
+
+        return map.keySet().iterator().next();
+    }
+```
