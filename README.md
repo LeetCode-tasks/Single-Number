@@ -51,7 +51,7 @@ _Constraints:_
 
 Each element in the array appears twice except for one element which appears only once.
 
-# Java solution
+# Solution in Java
 
 ```
 public int singleNumber(int[] nums) {
@@ -64,4 +64,21 @@ public int singleNumber(int[] nums) {
 
         return map.keySet().iterator().next();
     }
+```
+
+
+# Solution in JavaScript
+
+```
+var singleNumber = function(nums) {
+    let singleNumber
+    for (let i = 0; i < nums.length; i++) {
+        if (nums.indexOf(nums[i]) === nums.lastIndexOf(nums[i])) {
+            singleNumber = nums[i];
+            break;
+        }
+    }
+    
+    return singleNumber;
+};
 ```
