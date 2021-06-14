@@ -82,3 +82,13 @@ var singleNumber = function(nums) {
     return singleNumber;
 };
 ```
+# Solution in Python
+```python
+from collections import Counter
+class Solution:
+    def singleNumber(self, nums: List[int]) -> int:
+        cnt = Counter(nums).items()
+        for i in cnt:
+            if i[1] == 1:
+                return i[0]  
+```
